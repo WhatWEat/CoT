@@ -25,9 +25,17 @@
    作者在测试过程中，发现模型能够有更好的解释能力，在测试集中的错误也大多是推理正确但无法从多个选择中选择最好的那一个。作者也比较了相较于Let's think step by step的其他prompt发现使用该prompt模型的准确性更高。
 
 
-5. **Multimodal Chain-of-Thought Reasoning in Language Models** [17 Feb 2023]( https://doi.org/10.48550/arXiv.2302.0092)
+5. **Multimodal Chain-of-Thought Reasoning in Language Models** [17 Feb 2023](https://doi.org/10.48550/arXiv.2302.00923)
 
-    多模态状态下cot该如何实现，本文模态仅涉及视觉和语言两个领域
+    多模态状态下cot该如何实现，本文模态仅涉及视觉和语言两个领域。
+    在未加入vision feature前，作者得出了**文章1**中相似的结果，小于100B的NLP模型，在使用COT会出现混淆，进而导致正确率降低(约15%个点)
+    加入vision feature的方法大致分为两种，一种是使用**Caption**另一种则是直接将**vision features**直接喂给模型，因为使用caption存在着信息丢失，所以效果自然是后者好。
+    模型采取了**两步式**架构：
+    1. 先将图片文本对输入模型生成Rationale
+
+    2. 再将生成的Rationale和之前相同的图片文本对再次输入进模型，让模型生成推理过程进行回答
+
+	这样的使得回答的正确率有显著的上升。
 
 6. **MM-REACT: Prompting ChatGPT for Multimodal Reasoning and Action** 20 Mar 2023
 
