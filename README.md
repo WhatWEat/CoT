@@ -4,7 +4,7 @@
 	有关思维链的第一篇文章，在其中用了模型**PaLM 540B**，在**数学文字题**和**文字推理**的多个数据集上，通过对比使用standard few-shot prompting 和 作者人为构造chain of thought模板，发现了在数学推理方面，使用了CoT模板的模型有更好的推理能力。
 
 
-2. **Self-Consistency Improves Chain of Thought Reasoning in Language Models** 21 Mar 2022
+2. **Self-Consistency Improves Chain of Thought Reasoning in Language Models** [21 Mar 2022]()
 
 3. **Automatic Chain of thought Prompting in Large Language Models** [7 Oct 2022](https://doi.org/10.48550/arXiv.2210.03493)
 
