@@ -22,7 +22,7 @@
 
    该方式取得的效果不仅节约人力，还能比单纯的人工设置回答模板取得更好的效果。
    
-5. **Solving Math Word Problem via Cooperative Reasoning induced Language Models **[28 Oct 2022](https://arxiv.org/abs/2210.16257)
+5. **Solving Math Word Problem via Cooperative Reasoning induced Language Models** [28 Oct 2022](https://arxiv.org/abs/2210.16257)
 
    在**第二篇**文章的基础上，结合了强化学习中的蒙特卡洛树来进行训练模型，使得verifier能够在训练过程中针对生成的每一个token进行一个及时的反馈，进而更好的训练模型
 
@@ -48,8 +48,9 @@
 
 	这样的使得回答的正确率有显著的上升。
 
-8. **MM-REACT: Prompting ChatGPT for Multimodal Reasoning and Action** 20 Mar 2023
+8. **MM-REACT: Prompting ChatGPT for Multimodal Reasoning and Action** [20 Mar 2023]()
 
-6. 
+9. **Tree of Thoughts: Deliberate Problem Solving with Large Language Models** [20 Mar 2023]()
 
+    该模型将树的结构和一系列探索树的算法引入了cot之中，相比于蒙特卡洛树中利用path评估器和step评估器，在tot中仅使用了类似step verifier的模型来对生成的各个token进行评估，以获取最优解
  
